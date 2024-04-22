@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
+
+body{
+  background-color: #161616;
+  font-family: 'Source Code Pro', monospace;
+}
+
+#mainContainer {
+  border: 4px inset #0038FF;
+  border-radius: 30px;
+  color: white;
+  min-height: 100vh;
+}
+
+#myPicture{
+  max-width: 200px;
+}
