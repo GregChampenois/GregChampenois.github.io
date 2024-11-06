@@ -1,29 +1,18 @@
 ### LogBook
 
-05/04/2024 Repo init. Add a index.html and act Bootstrap as CSS Library\
-06/04/2024 Integrate Bootstrap 5.3. Define skeleton of the html.\
-06/06/2024 Add the profil picture. Act the overall style of the app.\
-06/04/2024 Change of the global skeleton and start the skeleton of each sub part. Draw of the skeleton in Excalidraw.
-22/04/2024 Init of a new GitHubPages repo as the first wasn't published online>
+22/04/2024 Init of a new GitHubPages. Design on Excalidraw. Add index.html and Bootstrap as CSS Library. Start writing content.
+06/11/2024 Projet revival. Content writing in html
 
 
 ---
 ### Ideas
 
+- SPA objective (using JS)
 - Improve the overall style towards old gaming arcade
 - Insert a "logo" (like a gaming loader) on the top left corner (only on laptop display)
-- SPA objective
 - Create a card template that will be use to add new app in the portfolio section (either return descrption of the undeployed app or redirect towards the app)
-
----
-### ToDos
-
-- [ ] LogBook as a table
-- [ ] When mobile display, the nav bar goes into a burger menu (or alternativ ?)
-- [ ] Add the contact button (linkedin, gitbuh) on the right of the profil picture
-- [ ] LegalsMention
-- [ ] Rework the semantic
-- [ ] Improve the SEO
+- SEO and semantic
+- Contact button (linkedin, githu) on the right of the profil picture
 
 ---
 ### Credits
