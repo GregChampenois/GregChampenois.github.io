@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
 
 body{
-  background-color: #161616;
+  background-image: url('../image/background.png');
+  background-repeat:no-repeat ;
+  background-size: 100% 100%;
   font-family: 'Source Code Pro', monospace;
 }
 
 #mainContainer {
+  backdrop-filter: blur(8px);
   border: 4px inset #0038FF;
   border-radius: 30px;
   color: white;
@@ -44,6 +47,7 @@ margin: auto;
 }
 
 .resumeContainer {
+  backdrop-filter: blur(3px);
   max-width: 48%;
   display: flex;
   flex-wrap: wrap;
