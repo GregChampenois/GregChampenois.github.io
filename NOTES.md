@@ -1,8 +1,8 @@
 ### LogBook
 
 22/04/2024 Init of a new GitHubPages. Design on Excalidraw. Add index.html and Bootstrap as CSS Library. Start writing content.
-06/11/2024 Projet revival. Content writing in html
-
+06/11/2024 Projet revival. Content writing in html. Add a gitignore for /src/image/*. Will need to be delete when project done to make image available online
+27/11/2024 Add flex box 
 
 ---
 ### Ideas

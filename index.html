@@ -4,110 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grégoire Champenois</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="./src/css/style.css">
 </head>
 
 <body>
-  <div id="mainContainer" class="container">
-    <div id="myPicture" class="row mx-auto">
-      <img src="./src/image/profile-pic-round-office.png" alt="ProfilPicture" class="img-fluid">
+  <div id="mainContainer">
+
+    <div id="myPicture">
+      <img src="./src/image/profile-pic-round-office.png" alt="ProfilPicture">
     </div>
-    <div id="myName" class="container text-center">
+
+    <div id="myName">
       <h1>Grégoire CHAMPENOIS</h1>
     </div>
 
-    <div id="menu" class="row text-center">
-      <div class="col-4">
-        <button type="button" class="btn btn-secondary">Formations</button>
+    <div id="buttonBar">
+      <div class="menuButton">
+        <button type="button">A propos</button>
       </div>
-      <div class="col-4">
-        <button type="button" class="btn btn-secondary">A propos</button>
+
+      <div class="menuButton">
+        <button type="button">Formations</button>
       </div>
-      <div class="col-4">
-        <button type="button" class="btn btn-secondary">Expériences</button>
+
+      <div class="menuButton">
+        <button type="button">Expériences</button>
       </div>
     </div>
 
-    <div id="about" class="container border border-3 border-danger"> 
-      <div id="introSpeech" class="row">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis corporis architecto ad quibusdam, ea, impedit delectus voluptas cumque sapiente tenetur unde maxime cum error illo eaque id qui veniam adipisci.</div>
-      <div id="languages" class="row">
-        <div id="languages1" class="col-6">Anglais</div>
-        <div id="languages2" class="col-6">Espagnol</div>
+    <div id="resume"> 
+      <div class="resumeContainer">
+        <div id="resumeTitleContainer">
+          <h2>Développeur Web et Web Mobile</h2>
+        </div>
+        <div class="resumeContentContainer">
+          <p>Démarrer</p>
+          <p>En pleine reconversion, ce site a pour but de présenter mon parcours et mettre en évidence mes compétences primordiales sur le HTML/CSS/JS. Ce site aura également pour intérêt d'être un bac à sable dans lequel je pourrai tester de nouvelles fonctionalités.<br>
+          Bienvenue !
+          <!-- Ajouter le curseur carré qui clignotte à la fin du texte (minitel), voir écrire en live le Bienvenue! -->
+          </p>
+        </div>
       </div>
-    </div>
-
-    <div id="cursus" class="container border border-3 border-success">
-      <div id="porfolio" class="row border border-3 border-white">
-        <a class="col-3" href="">Project 1</a>
-        <a class="col-3" href="">Project 2</a>
+      <div id="resumeSplitter">
       </div>
-      <div id="mainCursus" class="row border border-1 border-warning">
-        <div id="mainCursus1" class="row col-6 border border-1 border-secondary">
-          <div id="logoMainCursus1" class="col-4">ThumbnailFreeReseau</div>
-          <div id="descriptionMainCursus1" class="col-8">
-            <ul>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-            </ul>
+      <div class="resumeContainer">
+        <div class="skillContainer">
+          <div class="languageContainer">
+            <div class="languageName">
+              Anglais
+            </div>
+            <div class="languageLevel">
+              Révéler le niveau / ****
+            </div>
+          </div>
+          <div class="languageContainer">
+            <div class="languageName">
+              Espagnol
+            </div>
+            <div class="languageLevel">
+              Révéler le niveau / ****
+            </div>
           </div>
         </div>
-        <div id="mainCursus2" class="row col-6 border border-1 border-primary">
-          <div id="logoMainCursus2" class="col-4">ThumbnailAtos</div>
-          <div id="descriptionMainCursus2" class="col-8">
-            <ul>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-            </ul>
+        
+        <div class="skillContainer">
+          <div class="subSkillContainer">
+            <div class="skillTitle">
+              Langages
+            </div>
+            <div class="skillContent">
+              <div class="codeLanguageContainer">
+                <img src="./src/image/html.svg" alt="LogoHTML">
+              </div>
+              <div class="codeLanguageContainer">
+                <img src="./src/image/css.svg" alt="LogoCSS">
+              </div>
+              <div class="codeLanguageContainer">
+                <img src="./src/image/javascript.svg" alt="LogoJS">
+              </div>
+              <div class="codeLanguageContainer">
+                <img src="./src/image/php.svg" alt="LogoPHP">
+              </div>
+              <div class="codeLanguageContainer">
+                <img src="./src/image/mysql.svg" alt="LogoSQL">
+              </div>
+              <div class="codeLanguageContainer">
+                <img src="./src/image/git-icon.svg" alt="LogoGIT">
+              </div>
+            </div>
+          </div>
+          <div class="subSkillContainer">
+            <div class="skillTitle">
+              Compétences
+            </div>
+            <div class="skillContent">
+              <div class="competentContainer">
+                Agile
+              </div>
+              <div class="competentContainer">
+                Organisé
+              </div>
+              <div class="competentContainer">
+                Rigoureux
+              </div>
+              <div class="competentContainer">
+                Sens de l'écoute
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div id="otherCursus" class="row">
-        Monoprix
-        Conseil Syndical
-        ....
-      </div>
     </div>
-    <div id="course" class="container text-center">
-      <div id="skills" class="container">
-        <div id="skillsLine1" class="row">
-          <div class="col-3">HTML</div>
-          <div class="col-3">CSS</div>
-          <div class="col-3">JAVASCRIPT</div>
-          <div class="col-3">BOOTSTRAP</div>
-        </div>
-        <div id="skillsLine2" class="row">
-          <div class="col-3">PHP</div>
-          <div class="col-3">SYMFO</div>
-          <div class="col-3">SQL</div>
-          <div class="col-3">GIT</div>
-        </div>
-      </div>
-      <div id="course1" class="container">
-        <div class="row">Date</div>
-        <div class="row">Intitulé</div>
-        <div class="row">Ecole</div>
-        <div class="row">Description</div>
-      </div>
-      <div id="course2" class="container">
-        <div class="row">Date</div>
-        <div class="row">Intitulé</div>
-        <div class="row">Ecole</div>
-        <div class="row">Description</div>
-      </div>
-      <div id="course3" class="container">
-        <div class="row">Date</div>
-        <div class="row">Intitulé</div>
-        <div class="row">Ecole</div>
-        <div class="row">Description</div>
-      </div>
-    </div>
-
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
+
+      <!-- <div>
+        <ul>
+          <li>Intégrer des pages web en HTML et CSS</li>
+          <li>Développer des fonctionnalités Front-End en JavaScript</li>
+          <li>Concevoir des interfaces utilisateur</li>
+          <li>Concevoir, implémenter et utiliser des bases de données</li>
+          <li>Développer une application serveur en PHP</li>
+          <li>Mettre en oeuvre une solution de gestion de contenu (CMS)</li>
+          <li>Travailler en groupe sur un projet dans des conditions professionnelles</li>
+        </ul>
+      </div> -->
