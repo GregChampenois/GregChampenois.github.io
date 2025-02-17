@@ -7,14 +7,10 @@ body{
   background-repeat:no-repeat ;
   background-size: 100% 100%;
   font-family: 'Press Start 2P', cursive;
-}
-
-#mainContainer {
   backdrop-filter: blur(8px);
   border: 4px inset #0038FF;
   border-radius: 30px;
   color: white;
-  min-height: 100vh;
   width: 80%;
   margin: auto;
 }
@@ -24,7 +20,7 @@ header {
   padding-bottom: 30px;
 }
 
-#myPicture {
+.myPicture {
   display : block;
   height: 150px;
   max-width: 100%;
@@ -33,11 +29,11 @@ header {
   /* réduire à 100px quand on passe en format mobile */
 }
 
-#myName {
+.myName {
   text-align: center;
 }
 
-#buttonBar {
+.buttonBar {
   margin-left: auto;
   margin-right: auto;
   height: 120px;
@@ -45,7 +41,7 @@ header {
   justify-content: space-evenly;
 }
 
-#buttonBar button {
+.buttonBar button {
   height: 50px;
   width: 225px;
   background: #000541;
@@ -60,13 +56,13 @@ header {
   border: inset 4px #0038FF;
 }
 
-#buttonBar button:hover {
+.buttonBar button:hover {
 
   background: #000119;
   
 }
 
-#resume {
+#main {
   display: flex;
 }
 
