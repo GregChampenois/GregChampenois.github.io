@@ -1,23 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-html{
+html {
   padding-top: 15px;
   background-image: url('../image/background.png');
-  background-repeat:no-repeat ;
+  background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   height: 100%;
+  font-family: 'Press Start 2P', cursive !important;
 }
 
-body{
-  font-family: 'Press Start 2P', cursive;
+body {
   backdrop-filter: blur(8px);
   border: 4px inset #0038FF;
   border-radius: 30px;
   color: white;
-  width: 80%;
+  width: 95%;
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -27,82 +28,129 @@ header {
 }
 
 .myPicture {
-  display : block;
-  height: 150px;
+  display: block;
+  height: 100px;
   max-width: 100%;
   max-height: 100%;
   margin: auto;
-  /* réduire à 100px quand on passe en format mobile */
+}
+
+@media (min-width: 767px) {
+  .myPicture {
+    height: 150px;
+  }
 }
 
 .myName {
   text-align: center;
-  font-size: 1.5em;
+  font-size: clamp(0.7em, 3vw, 1.5em);
+  margin: 20px 20px;
+  white-space: nowrap;
 }
 
+/* Nav bar */
 .buttonBar {
-  margin-left: auto;
-  margin-right: auto;
-  height: 120px;
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  padding: 10px 0;
+  gap: 5px;
+  border: none;
+  background: none;
+  margin: 10px 0;
 }
 
 .buttonBar button {
-  height: 50px;
+  height: 40px;
   width: 225px;
-  background: #000541;
-  display: inline-block;
-  position: relative;
-  text-align: center;
-  font-size: 1em;
   padding: 10px;
-  font-family: 'Press Start 2P', cursive;
-  text-decoration: none; 
-  color: white;
+  font-size: 0.7em;
+  background: #000541;
   border: inset 4px #0038FF;
+  color: white;
+  margin: 5px 0;
+  font-family: 'Press Start 2P', cursive !important;
 }
 
-.buttonBar button:hover {
+.buttonBar button.active {
   background: #000119;
+  border: outset 4px #00FF80;
+  box-shadow: inset 0 0 10px #0038FF;
 }
 
+.buttonBar button:not(.active):hover {
+  background: #00008B;
+  border: inset 4px #002060;
+  box-shadow: inset 0 0 5px #000030;
+  color: #B0B0B0;
+}
+
+/* Sections principales */
 .main {
   display: flex;
+  flex-direction: column;
 }
 
-.aboutSection {
-  width: 48%;
+.section {
+  width: 100%;
+  padding: 10px;
   display: flex;
-  flex-wrap: wrap;
-  padding-top: 10px;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-bottom: 20px;
-  font-size: 0.8em;
+  flex-direction: column;
+  align-items: center;
 }
 
+.start-button {
+  display: block;
+  margin: 20px auto;
+  height: 40px;
+  width: 150px;
+  background: #000541;
+  border: inset 4px #00FF40;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.8em;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.typewriter {
+  font-family: 'Press Start 2P', cursive; /* Police du projet */
+  font-size: 0.8em;
+  color: white; /* Texte en blanc */
+  background: #000541;
+  border: inset 4px #0038FF; /* Bordure bleue rétro */
+  padding: 15px;
+  margin: 10px auto;
+  min-height: 100px;
+  display: none; /* Masqué au départ */
+  white-space: pre-wrap;
+  overflow: hidden;
+  text-align: center;
+}
+/* 
 .leftAboutSectionTitle {
   width: 100%;
   text-align: center;
-}
-
-.leftAboutSectionContent {
-  text-align: justify;
+  font-size: 1em;
 }
 
 .leftAboutSectionContent p:first-child {
   background: #000541;
-    display: inline-block;
-    position: relative;
-    text-align: center;
-    font-size: 1em;
-    padding: 10px;
-    font-family: 'Press Start 2P', cursive;
-    text-decoration: none; 
-    color: white;
-    border: inset 4px #0038FF;
+  display: inline-block;
+  text-align: center;
+  font-size: 0.8em;
+  padding: 10px;
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  border: inset 4px #0038FF;
+  margin: 0 auto 15px;
 }
 
 .leftAboutSectionContent p:first-child:hover {
@@ -110,48 +158,51 @@ header {
 }
 
 .aboutSection:last-child {
-  align-content : space-around;
+  align-content: space-around;
 }
 
 .aboutSplitter {
   border: 2px outset #0038FF;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px auto;
+  width: 80%;
 }
 
 .skillContainer {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  align-content : center
+  justify-content: center;
+  gap: 15px;
+  align-content: center;
 }
 
 .languageContainer {
-  width: 100%;
   display: flex;
-  flex-wrap:nowrap;
-  gap: 30px;
-}
-
-.languageContainer:first-child {
-  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
 }
 
 .languageName {
-  width: 30%;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5px;
 }
 
 .languageLevel {
-    background: #000541;
-    display: inline-block;
-    position: relative;
-    text-align: center;
-    font-size: 1em;
-    padding: 10px;
-    font-family: 'Press Start 2P', cursive;
-    text-decoration: none; 
-    color: white;
-    border: inset 4px #0038FF;
+  height: 40px;
+  width: 100%;
+  max-width: 250px;
+  margin: 5px auto;
+  padding: 5px 10px;
+  font-size: 0.7em;
+  background: #000541;
+  display: inline-block;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  border: inset 4px #0038FF;
+  box-sizing: border-box;
 }
 
 .languageLevel:hover {
@@ -159,7 +210,79 @@ header {
 }
 
 .skillContainer svg {
-  flex : 1 1 30%;
+  flex: 1 1 15%;
+  max-width: 100px;
+  height: auto;
+  padding: 10px;
   box-sizing: border-box;
-  padding: 30px;
+  margin: 0 auto;
 }
+
+@media (min-width: 768px) {
+  .buttonBar {
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .buttonBar button {
+    height: 50px;
+    width: 225px;
+    font-size: 1em;
+    margin: 0 5px;
+  }
+
+  .main {
+    flex-direction: row;
+  }
+
+  .aboutSection {
+    width: 48%;
+    padding: 10px 20px 20px 20px;
+  }
+
+  .leftAboutSectionTitle {
+    font-size: 1.2em;
+  }
+
+  .leftAboutSectionContent p:first-child {
+    font-size: 1em;
+  }
+
+  .languageContainer {
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
+
+  .languageName {
+    width: 30%;
+  }
+
+  .languageLevel {
+    width: 225px;
+    font-size: 1em;
+    margin: 0 5px;
+  }
+
+  .skillContainer svg {
+    flex: 1 1 15%;
+  }
+}
+
+
+
+  .languageContainer {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .languageName, .languageLevel {
+    width: 100%;
+    margin: 5px auto;
+  }
+
+  .skillContainer svg {
+    flex: 1 1 45%;
+    padding: 10px;
+  }
+ */
