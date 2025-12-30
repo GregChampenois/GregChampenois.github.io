@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function() {
       typewriterText.style.display = 'block';
 
       // Lance l'animation de frappe (à adapter avec ton texte réel)
-      const text = "LOREM IPSUM DOLOR SIT AMET..."; // Remplace par ton texte
+      const text = "En reconversion vers les métiers du développement web et web mobile, ce portfolio est le reflet de mon parcours et de mes compétences en HTML, CSS et JavaScript. Chaque projet présenté ici illustre ma passion pour la création d’expences numériques et mon engagement à maîtriser les technologies modernes."; // Remplace par ton texte
       let i = 0;
       function typeWriter() {
         if (i < text.length) {
