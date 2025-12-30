@@ -111,8 +111,8 @@ document.addEventListener('DOMContentLoaded', function() {
         if (i < text.length) {
           typewriterText.innerHTML += text.charAt(i);
           i++;
-          // Vitesse aléatoire pour un effet réaliste
-          const speed = 50 + Math.random() * 100;
+          // Vitesse accélérée pour un effet plus rapide
+          const speed = 20 + Math.random() * 30;
           setTimeout(typeWriter, speed);
         }
       }
